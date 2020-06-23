@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/tips-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header">
+        <h1>
+          <a href="javascipt:void(0);"><img src="../assets/images/logo-tips.png" alt="" /></a>
+        </h1>
+        <div class="header-menu">
+          <div class="gnb">
+            <ul>
+              <!-- 활성화된 메뉴 -->
+              <li><a href="javascript:void(0);">서비스 소개</a></li>
+              <!-- //활성화된 메뉴 -->
+              <li><a href="javascript:void(0);" class="on">구매하기</a></li>
+              <li><a href="javascript:void(0);">청구하기</a></li>
+            </ul>
+          </div>
+          <div class="util">
+            <ul>
+              <!-- 로그인 전 -->
+              <li><a href="javascript:void(0);">로그인</a></li>
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <!-- <li><a href="javascript:void(0);">마이페이지</a></li>
+              <li><a href="javascript:void(0);">로그아웃</a></li> -->
+              <!-- //로그인 후 -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- content -->
+      <div class="content">
+        <!-- 구매하기 화면 -->
+        <div class="order-area">
+          <!-- 구매하기 상단 -->
+          <div class="order-top">
+            <div class="gem">
+              <div class="price">10,000원</div>
+            </div>
+          </div>
+          <!-- //구매하기 상단 -->
+          <!-- 구매하기 액션 -->
+          <div class="order-action">
+            <div class="counting">
+              <button class="btn-minus" type="button"></button>
+              <div class="value">4</div>
+              <button class="btn-plus" type="button"></button>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="order-form">
+            <form action="">
+              <div class="form-area">
+                <div class="input-wrap">
+                  <label for="userName">
+                    입금자명
+                    <span class="imp">*</span>
+                  </label>
+                  <input type="text" name="userName" id="userName" placeholder="입금자명을 입력해주세요." />
+                </div>
+                <div class="input-agree">
+                  <div class="input-check">
+                    <label for="agreeCheck">
+                      <input type="checkbox" name="" id="agreeCheck" />
+                      <i></i>
+                    </label>
+                    <span>Tips의 이용약관에 동의 합니다. <a href="javascript:oid(0);">이용약관 보기</a></span>
+                  </div>
+                </div>
+                <div class="form-btns">
+                  <button type="button" class="btn-red">구매하기</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- //구매하기 액션 -->
+        </div>
+        <!-- //구매하기 화면 -->
+      </div>
+      <!-- //content -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-menu">
+          <div class="fnb">
+            <ul>
+              <li><a href="javascript:void(0);">서비스이용약관</a></li>
+              <li><a href="javascript:void(0);">개인정보보호</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info">
+          <h2>한국정품진흥원</h2>
+          <p>
+            고객센터 070-0000-0000
+            <br />
+            월~금 : 오전10시~오후5시 토/일 : 휴무
+            <br />
+            <br />
+            서울특별시 강남구 역삼동 277-14 팁스빌딩 12층
+            <br />
+            대표이사: 손용석
+            <br />
+            사업자등록번호: 677-87-01722
+            <br />
+            통신판매업신고: 제2020-인천남동구-0940 호 [사업자정보확인]
+          </p>
+        </div>
+      </div>
+      <!-- //footer -->
+      <!-- popup -->
+      <div class="popup" style="display: block;">
+        <p class="popup-text">Tips 구매를 진행합니다.</p>
+        <div class="popup-btns">
+          <button type="button" class="btn-red" onclick="$('.popup').hide();">확인</button>
+          <button type="button" class="btn-dark" onclick="$('.popup').hide();">취소</button>
+        </div>
+      </div>
+      <!-- //popup -->
+    </div>
+    <!-- javascript library load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <!-- custom script -->
+    <!-- onload script -->
+    <script>
+      $(function () {
+        // popup
+        $(".popup").show();
+      });
+    </script>
+  </body>
+</html>

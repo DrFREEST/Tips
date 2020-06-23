@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/tips-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header">
+        <h1>
+          <a href="javascipt:void(0);"><img src="../assets/images/logo-tips.png" alt="" /></a>
+        </h1>
+        <div class="header-menu">
+          <div class="gnb">
+            <ul>
+              <!-- 활성화된 메뉴 -->
+              <li><a href="javascript:void(0);">서비스 소개</a></li>
+              <!-- //활성화된 메뉴 -->
+              <li><a href="javascript:void(0);">구매하기</a></li>
+              <li><a href="javascript:void(0);">청구하기</a></li>
+            </ul>
+          </div>
+          <div class="util">
+            <ul>
+              <!-- 로그인 전 -->
+              <!-- <li><a href="javascript:void(0);">로그인</a></li> -->
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <li><a href="javascript:void(0);" class="on">마이페이지</a></li>
+              <li><a href="javascript:void(0);">로그아웃</a></li>
+              <!-- //로그인 후 -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- content -->
+      <div class="content">
+        <!-- 청구하기 화면 -->
+        <div class="payment-area result">
+          <h2>Tips 청구하기</h2>
+          <!-- 계좌 등록 후 -->
+          <div class="payment-box account">
+            <h3 class="payment-box-title">입금계좌정보</h3>
+            <div class="payment-box-content edit">
+              <span class="account-number">
+                <strong>국민은행</strong>
+                1234-2345-232453
+              </span>
+            </div>
+          </div>
+          <!-- //계좌 등록 후 -->
+          <h2>Tips 청구 내역</h2>
+          <!-- 팁스 -->
+          <div class="payment-box total-tips">
+            <div class="box">
+              <h3 class="payment-box-title">청구 할 팁스</h3>
+              <div class="payment-box-content">
+                <div class="tips-input">
+                  <input type="text" readonly value="30,000" />
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <h3 class="payment-box-title">최종 팁스</h3>
+              <div class="payment-box-content">
+                <div class="tips-input">
+                  <input type="text" readonly value="23,100" />
+                </div>
+              </div>
+            </div>
+            <p class="text-center">청구일 : 2020. 06. 30</p>
+          </div>
+          <!-- //팁스 -->
+          <div class="result-message">
+            <h3>현재 청구하신 팁스가 처리 중입니다.</h3>
+            <p>
+              청구한 팁스는 영업일 기준 3일 이내에 처리됩니다.
+              <br />
+              청구한 팁스가 처리되기 전까지는 추가로 청구할 수 없습니다.
+            </p>
+          </div>
+          <div class="form-btns">
+            <button type="button" class="btn-red">메인화면으로</button>
+          </div>
+        </div>
+
+        <!-- //청구하기 화면 -->
+      </div>
+      <!-- //content -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-menu">
+          <div class="fnb">
+            <ul>
+              <li><a href="javascript:void(0);">서비스이용약관</a></li>
+              <li><a href="javascript:void(0);">개인정보보호</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info">
+          <h2>한국정품진흥원</h2>
+          <p>
+            고객센터 070-0000-0000
+            <br />
+            월~금 : 오전10시~오후5시 토/일 : 휴무
+            <br />
+            <br />
+            서울특별시 강남구 역삼동 277-14 팁스빌딩 12층
+            <br />
+            대표이사: 손용석
+            <br />
+            사업자등록번호: 677-87-01722
+            <br />
+            통신판매업신고: 제2020-인천남동구-0940 호 [사업자정보확인]
+          </p>
+        </div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- javascript library load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <!-- custom script -->
+    <!-- onload script -->
+    <script>
+      $(function () {});
+    </script>
+  </body>
+</html>

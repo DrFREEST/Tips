@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/tips-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header">
+        <h1>
+          <a href="javascipt:void(0);"><img src="../assets/images/logo-tips.png" alt="" /></a>
+        </h1>
+        <div class="header-menu">
+          <div class="gnb">
+            <ul>
+              <!-- 활성화된 메뉴 -->
+              <li><a href="javascript:void(0);">서비스 소개</a></li>
+              <!-- //활성화된 메뉴 -->
+              <li><a href="javascript:void(0);" class="on">구매하기</a></li>
+              <li><a href="javascript:void(0);">청구하기</a></li>
+            </ul>
+          </div>
+          <div class="util">
+            <ul>
+              <!-- 로그인 전 -->
+              <li><a href="javascript:void(0);">로그인</a></li>
+              <!-- //로그인 전 -->
+              <!-- 로그인 후 -->
+              <!-- <li><a href="javascript:void(0);">마이페이지</a></li>
+              <li><a href="javascript:void(0);">로그아웃</a></li> -->
+              <!-- //로그인 후 -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+      <!-- content -->
+      <div class="content">
+        <!-- 청구하기 화면 -->
+        <div class="payment-area">
+          <h2>Tips 청구하기</h2>
+          <!-- 계좌 등록 전 -->
+          <div class="payment-box account">
+            <h3 class="payment-box-title">입금계좌정보</h3>
+            <div class="payment-box-content">
+              <button type="button" class="btn-add">계좌등록</button>
+            </div>
+          </div>
+          <!-- //계좌 등록 전 -->
+          <!-- 계좌 등록 후 -->
+          <div class="payment-box account">
+            <h3 class="payment-box-title">입금계좌정보</h3>
+            <div class="payment-box-content edit">
+              <span class="account-number">
+                <strong>국민은행</strong>
+                1234-2345-232453
+              </span>
+              <button type="button" class="btn-edit">수정</button>
+            </div>
+          </div>
+          <!-- //계좌 등록 후 -->
+          <!-- 청구 가능한 내 팁스 -->
+          <div class="payment-box tips">
+            <h3 class="payment-box-title">청구 가능한 내 팁스</h3>
+            <div class="payment-box-content">
+              <div class="price">
+                20,000,000
+                <span class="unit">Tips</span>
+              </div>
+            </div>
+          </div>
+          <!-- //청구 가능한 내 팁스 -->
+          <!-- 팁스 청구하기 -->
+          <div class="payment-box payment">
+            <h3 class="payment-box-title">팁스 청구하기</h3>
+            <div class="payment-box-content">
+              <div class="counting">
+                <button class="btn-minus" type="button"></button>
+                <div class="value">1</div>
+                <button class="btn-plus" type="button"></button>
+              </div>
+              <div class="price">
+                10,000
+                <span class="unit">Tips</span>
+              </div>
+            </div>
+          </div>
+          <!-- //팁스 청구하기 -->
+          <p>청구 시 차감 수수료 : 23.3%</p>
+          <!-- 팁스 -->
+          <div class="payment-box total-tips">
+            <div class="box">
+              <h3 class="payment-box-title">청구 할 팁스</h3>
+              <div class="payment-box-content">
+                <div class="tips-input">
+                  <input type="text" readonly value="30,000" />
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <h3 class="payment-box-title">최종 팁스</h3>
+              <div class="payment-box-content">
+                <div class="tips-input">
+                  <input type="text" readonly value="23,100" />
+                </div>
+              </div>
+            </div>
+            <p>청구한 팁스는 영업일 기준 3일 이내에 처리됩니다.</p>
+          </div>
+          <!-- //팁스 -->
+          <div class="form-btns">
+            <button type="button" class="btn-red">청구하기</button>
+          </div>
+        </div>
+        <!-- //청구하기 화면 -->
+      </div>
+      <!-- //content -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-menu">
+          <div class="fnb">
+            <ul>
+              <li><a href="javascript:void(0);">서비스이용약관</a></li>
+              <li><a href="javascript:void(0);">개인정보보호</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info">
+          <h2>한국정품진흥원</h2>
+          <p>
+            고객센터 070-0000-0000
+            <br />
+            월~금 : 오전10시~오후5시 토/일 : 휴무
+            <br />
+            <br />
+            서울특별시 강남구 역삼동 277-14 팁스빌딩 12층
+            <br />
+            대표이사: 손용석
+            <br />
+            사업자등록번호: 677-87-01722
+            <br />
+            통신판매업신고: 제2020-인천남동구-0940 호 [사업자정보확인]
+          </p>
+        </div>
+      </div>
+      <!-- //footer -->
+      <!-- popup -->
+      <div class="popup" style="display: block;">
+        <p class="popup-text">Tips 청구를 진행합니다.</p>
+        <div class="popup-btns">
+          <button type="button" class="btn-red" onclick="$('.popup').hide();">확인</button>
+          <button type="button" class="btn-dark" onclick="$('.popup').hide();">취소</button>
+        </div>
+      </div>
+      <!-- 계좌등록 팝업 -->
+      <div class="popup form" style="display: block;">
+        <form action="">
+          <div class="form-area">
+            <div class="input-wrap">
+              <label for="userName">
+                예금주
+                <span class="imp">*</span>
+              </label>
+              <input type="text" name="userName" id="userName" placeholder="예금주명을 입력해주세요." />
+            </div>
+            <div class="input-wrap">
+              <label for="bankName">
+                은행명
+                <span class="imp">*</span>
+              </label>
+              <input type="text" name="bankName" id="bankName" placeholder="은행명을 입력해주세요." />
+            </div>
+            <div class="input-wrap">
+              <label for="bankName">
+                계좌번호
+                <span class="imp">*</span>
+              </label>
+              <input type="text" name="bankName" id="bankName" placeholder="계좌번호를 입력해주세요.(숫자만 입력)" />
+            </div>
+          </div>
+        </form>
+        <div class="popup-btns">
+          <button type="button" class="btn-black" onclick="$('.popup.form').hide();">저장하기</button>
+          <button type="button" class="btn-blue" onclick="$('.popup.form').hide();">취소</button>
+        </div>
+      </div>
+      <!-- //계좌등록 팝업 -->
+      <!-- //popup -->
+    </div>
+    <!-- javascript library load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <!-- custom script -->
+    <!-- onload script -->
+    <script>
+      $(function () {
+        // popup
+        $(".popup").show();
+      });
+    </script>
+  </body>
+</html>
